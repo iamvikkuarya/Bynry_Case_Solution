@@ -1,6 +1,7 @@
 # Bynry Case Study - My Solution
 
 **Name:** Vivek Kumar 
+
 **Date:** January 6, 2026 
 
 ---
@@ -10,9 +11,9 @@
 I've organized my case study solutions into 3 folders (one for each part):
 
 ```
-Part1_Flaky_Tests/       # Debugging flaky tests (30 min)
-Part2_Framework_Design/   # Framework architecture (25 min)  
-Part3_Integration_Test/   # API + UI + Mobile test (35 min)
+Part1_Flaky_Tests/       #
+Part2_Framework_Design/   
+Part3_Integration_Test/   
 ```
 
 Each folder has:
@@ -62,6 +63,6 @@ This case study helped me understand:
 
 ---
 
-**Contact:** [Vivekkumararya2179@gmail.com]  
+**Contact:** Vivekkumararya2179@gmail.com  
 
 Thanks for reviewing! Happy to answer any questions.
