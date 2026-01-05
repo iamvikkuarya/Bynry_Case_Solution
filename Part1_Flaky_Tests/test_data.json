@@ -1,0 +1,34 @@
+{
+  "test_users": {
+    "company1_admin": {
+      "email": "admin@company1.com",
+      "password": "password123",
+      "company": "Company1",
+      "has_2fa": false
+    },
+    "company1_user": {
+      "email": "user@company1.com",
+      "password": "password123",
+      "company": "Company1",
+      "has_2fa": false
+    },
+    "company2_admin": {
+      "email": "admin@company2.com",
+      "password": "password123",
+      "company": "Company2",
+      "has_2fa": true,
+      "note": "Company2 has 50,000 projects - loads slower"
+    },
+    "company2_user": {
+      "email": "user@company2.com",
+      "password": "password123",
+      "company": "Company2",
+      "has_2fa": true
+    }
+  },
+  "config": {
+    "app_url": "https://app.workflowpro.com",
+    "timeout": 10000,
+    "slow_timeout": 30000
+  }
+}

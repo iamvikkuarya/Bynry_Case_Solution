@@ -1,0 +1,94 @@
+test-automation-framework/
+│
+├── config/
+│   ├── __init__.py
+│   ├── config.py                    # Main config (env, browser, etc.)
+│   ├── environments.py              # Environment URLs
+│   ├── tenants.py                   # Tenant-specific config
+│   └── users.py                     # User roles and permissions
+│
+├── core/
+│   ├── __init__.py
+│   ├── base_page.py                 # Base page class (all pages inherit)
+│   ├── base_test.py                 # Base test class (all tests inherit)
+│   └── browser_factory.py           # Browser creation logic
+│
+├── pages/
+│   ├── __init__.py
+│   ├── login_page.py                # Login page object
+│   ├── dashboard_page.py            # Dashboard page object
+│   ├── projects_page.py             # Projects page object
+│   └── settings_page.py             # Settings page object
+│
+├── tests/
+│   ├── ui/
+│   │   ├── __init__.py
+│   │   ├── test_login.py            # UI login tests
+│   │   ├── test_projects.py         # UI project tests
+│   │   └── test_multi_tenant.py     # Multi-tenant tests
+│   │
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── test_users_api.py        # User API tests
+│   │   ├── test_projects_api.py     # Projects API tests
+│   │   └── test_auth_api.py         # Auth API tests
+│   │
+│   └── mobile/
+│       ├── __init__.py
+│       ├── test_ios.py              # iOS-specific tests
+│       └── test_android.py          # Android-specific tests
+│
+├── utils/
+│   ├── __init__.py
+│   ├── data_loader.py               # Load test data from JSON/CSV
+│   ├── api_helper.py                # API request helpers
+│   ├── logger.py                    # Logging utility
+│   └── screenshot.py                # Screenshot on failure
+│
+├── data/
+│   ├── test_users.json              # Test user data
+│   ├── test_projects.json           # Test project data
+│   └── api_payloads.json            # API request payloads
+│
+├── reports/
+│   ├── allure-results/              # Allure test results
+│   └── screenshots/                 # Failed test screenshots
+│
+├── integrations/
+│   ├── __init__.py
+│   ├── browserstack.py              # BrowserStack integration
+│   └── ci_cd.py                     # CI/CD helpers
+│
+├── .github/
+│   └── workflows/
+│       └── test.yml                 # GitHub Actions CI/CD
+│
+├── pytest.ini                       # Pytest configuration
+├── requirements.txt                 # Python dependencies
+├── .gitignore                      # Git ignore file
+└── README.md                        # Framework documentation
+
+
+KEY PRINCIPLES:
+==============
+
+1. Separation of Concerns
+   - Tests only contain test logic
+   - Pages contain element locators and interactions
+   - Config contains all configuration
+   - Utils contain reusable helpers
+
+2. DRY (Don't Repeat Yourself)
+   - Common code in base classes
+   - Reusable utilities
+   - Shared fixtures
+
+3. Easy to Navigate
+   - Clear folder names
+   - Organized by test type (ui, api, mobile)
+   - Everything has its place
+
+4. Scalable
+   - Easy to add new pages
+   - Easy to add new tests
+   - Easy to add new environments

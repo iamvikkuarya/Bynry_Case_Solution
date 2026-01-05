@@ -1,0 +1,46 @@
+{
+  "test_config": {
+    "api_base_url": "https://api.workflowpro.com",
+    "web_base_url": "https://workflowpro.com",
+    "timeout": 10000
+  },
+  "companies": {
+    "company1": {
+      "tenant_id": "company1",
+      "api_token": "test_token_company1",
+      "web_url": "https://company1.workflowpro.com",
+      "users": {
+        "admin": {
+          "email": "admin@company1.com",
+          "password": "password123"
+        }
+      }
+    },
+    "company2": {
+      "tenant_id": "company2",
+      "api_token": "test_token_company2",
+      "web_url": "https://company2.workflowpro.com",
+      "users": {
+        "admin": {
+          "email": "admin@company2.com",
+          "password": "password123"
+        }
+      }
+    }
+  },
+  "test_project": {
+    "name": "Test Project - Integration",
+    "description": "Created for integration testing",
+    "team_members": []
+  },
+  "mobile_viewports": {
+    "iphone": {
+      "width": 375,
+      "height": 667
+    },
+    "android": {
+      "width": 360,
+      "height": 640
+    }
+  }
+}
