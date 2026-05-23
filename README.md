@@ -1,68 +1,43 @@
-# Bynry Case Study - My Solution
+# playwright-qa-framework
 
-**Name:** Vivek Kumar 
+End-to-end QA automation framework built with Playwright and pytest, covering flaky test diagnosis, multi-layer framework design, and full integration testing across API and UI layers.
 
-**Date:** January 6, 2026 
+## Structure
+Part1_Flaky_Tests/       # Flaky test analysis and fixes
+Part2_Framework_Design/  # Framework architecture design
+Part3_Integration_Test/  # API-to-UI integration test suite
 
----
+## What's covered
 
-## What's in this repo
+**Part 1 — Flaky Test Diagnosis**
+Identified and fixed 7 issues in an existing test suite — race conditions, improper waits, missing fixtures, and timing-dependent assertions.
 
-I've organized my case study solutions into 3 folders (one for each part):
+**Part 2 — Framework Design**
+Designed a scalable test framework architecture supporting web, mobile, and API testing layers with clear separation of concerns.
 
-```
-Part1_Flaky_Tests/       #
-Part2_Framework_Design/   
-Part3_Integration_Test/   
-```
+**Part 3 — Integration Testing**
+Full integration test covering end-to-end flow: create entity via API → verify in UI → validate on mobile.
 
-Each folder has:
-- README - how to run/understand it
-- Test scripts/code
-- Test plan
-- Test data
-- Report of what I did
-- My approach/reasoning
+## Stack
 
----
+Python · Playwright · pytest · GitHub Actions
 
-## How to check my work
+## Setup & Run
 
-**Option 1:** Just read through each folder
-- Start with Part1, then Part2, then Part3
-- Each README explains what I did
-
-**Option 2:** Run the code
 ```bash
+# Install dependencies
+pip install playwright pytest
+playwright install
+
+# Run flaky test fixes
 cd Part1_Flaky_Tests
 pytest fixed_code.py
 
-cd Part3_Integration_Test  
+# Run integration tests
+cd Part3_Integration_Test
 pytest test_integration.py
 ```
-*(Needs Python, Playwright installed)*
 
----
+## Contact
 
-## What I learned
-
-This case study helped me understand:
-- Why tests become flaky (race conditions, timing issues)
-- How to use Playwright waits properly
-- pytest fixtures for setup/cleanup
-- Multi-tenant testing challenges
-- Why CI/CD is different from local testing
-
----
-
-## Quick Summary
-
-**Part 1:** Found 7 issues in flaky test code, fixed all of them  
-**Part 2:** Designed framework structure for web + mobile + API testing  
-**Part 3:** Wrote full integration test (create via API → verify in UI → check mobile)
-
----
-
-**Contact:** Vivekkumararya2179@gmail.com  
-
-Thanks for reviewing! Happy to answer any questions.
+vivekkumararya2179@gmail.com
